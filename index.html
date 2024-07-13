@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        
+        <div class="calculadora">
+            <div class="display" id="display">0</div>
+            <div class="botoes">
+                <button class="botao grande cinza" id="clear">AC</button>
+                <button class="botao cinza" id="limpar">←</button>
+                <button class="botao operacao" onclick="expressao('/')">÷</button>
+                <button class="botao number" onclick="expressao('7')">7</button>
+                <button class="botao number" onclick="expressao('8')">8</button>
+                <button class="botao number" onclick="expressao('9')">9</button>
+                <button class="botao operacao" onclick="expressao('*')" >×</button>
+                <button class="botao number" onclick="expressao('4')">4</button>
+                <button class="botao number" onclick="expressao('5')">5</button>
+                <button class="botao number" onclick="expressao('6')">6</button>
+                <button class="botao operacao" onclick="expressao('-')">−</button>
+                <button class="botao number" onclick="expressao('1')">1</button>
+                <button class="botao number" onclick="expressao('2')">2</button>
+                <button class="botao number" onclick="expressao('3')">3</button>
+                <button class="botao operacao" onclick="expressao('+')">+</button>
+                <button class="botao number grande" onclick="expressao('0')">0</button>
+                <button class="botao number" onclick="expressao('.')">.</button>
+                <button class="botao operacao" onclick="resultado()">=</button>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
